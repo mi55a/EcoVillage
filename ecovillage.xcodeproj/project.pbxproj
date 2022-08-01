@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A5050A2027F37D4600C6CABA /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */; };
-		A50A05F9285AAA9F008D0E36 /* WaterFootprint.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */; };
 		A5236B46280A1EE500DC9D7F /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */; };
 		A5236B48280A1F0700DC9D7F /* ClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B47280A1F0700DC9D7F /* ClassificationView.swift */; };
 		A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */; };
@@ -25,11 +24,12 @@
 		A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918827EA466400101791 /* LiveCameraViewController.swift */; };
 		A5D6918D27EA48B100101791 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918C27EA48B100101791 /* Constants.swift */; };
 		A5D6919027EA48F900101791 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918F27EA48F900101791 /* Helpers.swift */; };
+		BDB881302A7C1AF800F4D339 /* EcoVillage.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BDB8812F2A7C1AF800F4D339 /* EcoVillage.mlmodel */; };
+		BDE04CC42A7BF205000CAFAF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE04CC32A7BF205000CAFAF /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
-		A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = WaterFootprint.mlpackage; sourceTree = "<group>"; };
 		A5236B45280A1EE500DC9D7F /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		A5236B47280A1F0700DC9D7F /* ClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationView.swift; sourceTree = "<group>"; };
 		A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButtonStyle.swift; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		A5D6918C27EA48B100101791 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5D6918F27EA48F900101791 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A5D6919127EA5B4D00101791 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB8812F2A7C1AF800F4D339 /* EcoVillage.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = EcoVillage.mlmodel; path = ../../../../Desktop/EcoVillage.mlmodel; sourceTree = "<group>"; };
+		BDE04CC32A7BF205000CAFAF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				A5D6917027EA441E00101791 /* coreML_starterApp.swift */,
 				A5D6917227EA441E00101791 /* ContentView.swift */,
 				A5236B47280A1F0700DC9D7F /* ClassificationView.swift */,
+				BDE04CC32A7BF205000CAFAF /* MapView.swift */,
 				A5050A1F27F37D4600C6CABA /* ClassifierViewModel.swift */,
 				A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */,
 			);
@@ -143,7 +146,7 @@
 		A5D6918627EA44F200101791 /* 1-Model */ = {
 			isa = PBXGroup;
 			children = (
-				A50A05F8285AAA9F008D0E36 /* WaterFootprint.mlpackage */,
+				BDB8812F2A7C1AF800F4D339 /* EcoVillage.mlmodel */,
 				A5D6918127EA44C300101791 /* PredictionStatus.swift */,
 			);
 			path = "1-Model";
@@ -202,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A5D6916827EA441E00101791 /* Build configuration list for PBXProject "coreML-starter" */;
+			buildConfigurationList = A5D6916827EA441E00101791 /* Build configuration list for PBXProject "ecovillage" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -239,10 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
+				BDE04CC42A7BF205000CAFAF /* MapView.swift in Sources */,
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
-				A50A05F9285AAA9F008D0E36 /* WaterFootprint.mlpackage in Sources */,
 				A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */,
 				A59292B728249C180083008B /* AboutView.swift in Sources */,
+				BDB881302A7C1AF800F4D339 /* EcoVillage.mlmodel in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
 				A5D6918927EA466400101791 /* LiveCameraRepresentable.swift in Sources */,
 				A5287C97286CF66800A14D68 /* PredictionResultView.swift in Sources */,
@@ -383,7 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"coreML-starter/Preview Content\"";
-				DEVELOPMENT_TEAM = AVU6LDWEFT;
+				DEVELOPMENT_TEAM = 3S5L7G99GS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "coreML-starter/Info.plist";
@@ -398,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coreML-starter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.milycoreML-starter.ecovillage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -414,7 +418,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"coreML-starter/Preview Content\"";
-				DEVELOPMENT_TEAM = AVU6LDWEFT;
+				DEVELOPMENT_TEAM = 3S5L7G99GS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "coreML-starter/Info.plist";
@@ -429,7 +433,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coreML-starter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.milycoreML-starter.ecovillage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -440,7 +444,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5D6916827EA441E00101791 /* Build configuration list for PBXProject "coreML-starter" */ = {
+		A5D6916827EA441E00101791 /* Build configuration list for PBXProject "ecovillage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5D6917927EA442000101791 /* Debug */,

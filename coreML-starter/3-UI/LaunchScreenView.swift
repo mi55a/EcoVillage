@@ -13,7 +13,7 @@ struct LaunchScreenView: View {
             VStack {
                 // header image:
                 // TODO: replace with your own image.  Drag an image from your computer to assets.xcassets and add the name of your image below
-                Image("water-footprint")
+                Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250)
@@ -21,50 +21,67 @@ struct LaunchScreenView: View {
                 
                 // title
                 // TODO: Replace app title
-                Text("Water Footprint")
+                Text("EcoVillage")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color("darkestgreen"))
                 
                 Divider().frame(maxWidth: 300)
                 
                 // info
                 // TODO: Replace with description of your app
-                VStack(spacing: 20) {
-                    Text("Discover how much water is needed to grow our food!")
+                VStack(spacing: 10) {
+                    Text("Welcome to EcoVillage, your map to a cleaner tomorrow!")
                     
-                    Text("This app uses the camera and AR (powered by ML) to show the environmental impact of different foods.")
+                    Text("This app uses the camera and AR (powered by ML) to classify disposables.")
                     
-                    Text("Gather these ingredients to get started.")
                 }
                 .padding()
                 .multilineTextAlignment(.center)
                 
                 // item list
                 // TODO: replace with the names of your items
-                HStack(spacing: 10) {
+                HStack(spacing: -20) {
                     VStack {
-                        Text("🍅")
-                        Text("Tomato")
+                        Text("📦")
+                        Text("Cardboard")
                     }
                     .padding()
                     
                     VStack {
-                        Text("🍊")
-                        Text("Orange")
+                        Text("🥛")
+                        Text("Glass")
                     }
                     .padding()
                     
                     VStack {
-                        Text("🥑")
-                        Text("Avocado")
+                        Text("🥫")
+                        Text("Metal")
                     }
                     .padding()
                     
                     VStack {
-                        Text("🥜")
-                        Text("Walnut")
+                        Text("📄")
+                        Text("Paper")
+                    }
+                    .padding()
+                    
+                    VStack {
+                        Text("🚮")
+                        Text("Trash")
+                    }
+                    .padding()
+                    
+                    VStack {
+                        Text("🥽")
+                        Text("Plastic")
+                    }
+                    .padding()
+                    
+                    VStack {
+                        Text("🥬")
+                        Text("Organic waste")
                     }
                     .padding()
                 }
@@ -72,16 +89,27 @@ struct LaunchScreenView: View {
                 .cornerRadius(10)
                 .padding()
                 
-                // start button
-                NavigationLink(destination: ClassificationView()){
-                    Text("Start")
-                }
-                .buttonStyle(RoundedRectButtonStyle(buttonColor: .blue))
-                .padding()
-                
-                // about page
-                NavigationLink(destination: AboutView()){
-                    Text("Credits")
+                HStack {
+                    // start button
+                    NavigationLink(destination: ClassificationView()){
+                        Text("Scan")
+                    }
+                    .buttonStyle(RoundedRectButtonStyle(buttonColor: Color("lightgreen")))
+                    .padding(10)
+                    
+                    // map button
+                    
+                    NavigationLink(destination: MapView()){
+                        Text("Map")
+                            
+                    }
+                    .buttonStyle(RoundedRectButtonStyle(buttonColor: Color("navyblue")))
+                    .padding(10)
+                    
+                    // about page
+                    NavigationLink(destination: AboutView()){
+                        Text("Credits")
+                    }
                 }
             }
             .padding()
@@ -92,7 +120,7 @@ struct LaunchScreenView: View {
             
         }// VStack
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(hex: 0xD5F4FF, opacity: 1.0))
+        .background(Color("darkgreen"))
         .edgesIgnoringSafeArea(.all)
         .navigationBarHidden(true)
     }

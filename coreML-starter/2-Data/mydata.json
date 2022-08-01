@@ -1,22 +1,38 @@
 [
     {
-        "label": "tomato",
-        "water": 3,
-        "emoji": "🍅"
+        "label": "Cardboard",
+        "info": "Cardboard: This goes in the recycling bin ♻️ Flatten cardboard and tear off any plastic lining before disposing.",
+        "emoji": "📦",
     },
     {
-        "label": "orange",
-        "water": 14,
-        "emoji": "🍊"
+        "label": "Glass",
+        "info": "Glass Bottles/Jars : This goes in the recycling bin ♻️Unlid and empty jars or bottles.",
+        "emoji": "🥛",
     },
     {
-        "label": "avocado",
-        "water": 60,
-        "emoji": "🥑"
+        "label": "Metal",
+        "info": "Aluminum Cans and Steel/Tin Cans: This goes in the recycling bin ♻️. E-Waste and metal tanks: Do not put this in the recycling bin ❌",
+        "emoji": "🥫",
     },
     {
-        "label": "walnut",
-        "water": 5,
-        "emoji": "🥜"
+        "label": "Paper",
+        "info": "This goes in the recycling bin ♻️",
+        "emoji": "📄",
+    },
+    {
+        "label": "Trash",
+        "info": "Throw away in a trash can. Found in parks, commercial, residential, and downtown areas. Do not put this in the recycling bin ❌",
+        "emoji": "🚮",
+    },
+    {
+        "label": "Plastic",
+        "info": "If wrap/bag: This goes in the garbage 🗑️. If bottle: This goes in the recycling bin ♻️Empty bottle",
+        "emoji": "🥽",
+    },
+    {
+        "label": "Organic Waste",
+        "info": "Throw away in a compost bin or compost site. Do not put in recycling bin ❌",
+        "emoji": "🥬",
     }
+    
 ]
