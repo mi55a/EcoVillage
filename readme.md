@@ -1,8 +1,6 @@
 Welcome to EcoVillage, your map to a cleaner tomorrow! 
 
-From urban streets to tranquil parks, EcoVillage empowers users to make a difference in every corner of their city. 
 
-EcoVillage motivates users to help solve environmental problems related to littering.
 
 EcoVillage Features
 
