@@ -14,6 +14,7 @@ EcoVillage Features
 
 Note from Mily: created this app with Seanna and Sophia while at the KWK AI/ML Chicago camp and couldn't be prouder. This is a work in progress and hopefully we can continue to work on it. 
 
-Credits: 
+Credits:
+Thank you to these data sets: Garbage Classification by cchangcs on Kaggle and Waste Classification Dataset by Sashaank Sekar on Kaggle
 
 
